@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+.parent-card{
+  --opac: 1;
+  --bottom:-90%;
+  transition: all ease 0.5s;
+}
+.parent-card:hover{
+  --opac: 0.3;
+  --bottom:0%
+}
+.parent-card > img{
+  opacity: var(--opac);
+}
+.child-card{
+  transition: all ease 0.5s;
+  bottom: var(--bottom);
+}
+.ballon1{
+  background: url('/_Pngtree_blue_light_shadow_cartoon_balloon_5524500-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 150px;
+  aspect-ratio: 3/4;  
+  animation: leftright 10s linear infinite;
+}
+.ballon2{
+  background: url('/_Pngtree_yellow-green_cartoon_balloon_5524484-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 150px;
+  aspect-ratio: 3/4;
+  animation: circle-animation 20s linear infinite;
+
+}
+.ballon3{
+  
+  background: url('/images-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 150px;
+  aspect-ratio: 3/4;
+  animation: updown 10s linear infinite;
+}
+.ballon4{
+  
+  background: url('/_Pngtree_blue_light_shadow_cartoon_balloon_5524500-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 150px;
+  aspect-ratio: 3/4;
+  animation: circle-animation 25s linear infinite;
+}
+@keyframes leftright{
+  0%{
+    translate: 0%;
+  }
+  25%{
+    translate: 25%;
+  }
+  50%{
+    translate: 50%;
+  }
+  100%{
+    translate: 0%;
+  } 
+}
+@keyframes updown{
+  0%{
+    transform: translate(0%,-50%);
+  }
+  25%{
+    transform: translate(0%,-75%) ;
+  }
+  50%{
+    transform: translate(0%,-100%) ;
+  }
+  75%{
+    transform: translate(0%,-75%) ;
+  }
+  100%{
+    transform: translate(0%,-50%);
+  } 
+}
+@keyframes circle-animation {
+  0% {
+    transform: translate(50px, 0px);
+  }
+  12.5% {
+    transform: translate(100px, 50px);
+  }
+  25% {
+    transform: translate(50px, 100px);
+  }
+  37.5% {
+    transform: translate(0px, 50px);
+  }
+  50% {
+    transform: translate(50px, 0px);
+  }
+  62.5% {
+    transform: translate(100px, -50px);
+  }
+  75% {
+    transform: translate(50px, -100px);
+  }
+  87.5% {
+    transform: translate(0px, -50px);
+  }
+  100% {
+    transform: translate(50px, 0px);
+  }
+}
+
+

@@ -1,0 +1,146 @@
+.text-100xl{
+  font-size: 250px;
+}
+.left--10{
+  left: -60px;
+}
+
+.left--20{
+  left: -70px;
+}
+.top--5{
+  top:-10px
+}
+.top--30{
+  top: -15px;
+}
+.top--100{
+  top: -80px;
+}
+
+.top--50{
+  top: -10px;
+}
+.unselected{
+  user-select: none;
+}
+.image1{
+  background: url('/image-from-rawpixel-id-15080738-jpeg-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 80px;
+  aspect-ratio: 3/4;
+}
+.image2{
+  background: url('/image-from-rawpixel-id-15089639-png-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 50px;
+  aspect-ratio: 3/4;
+}
+.image3{
+  background: url('/image-from-rawpixel-id-15167659-png-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 80px;
+  aspect-ratio: 3/4;
+}
+.image4{
+  background: url('/image-from-rawpixel-id-15168059-png-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 120px;
+  aspect-ratio: 3/4;
+}
+
+.cloud{
+  background: url('/360_F_89420298_g2G1BanBZfVnSByIPvDqpYHOmqtbxHCU-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 220px;
+  aspect-ratio: 5/4;
+  animation-name: clouds;
+  animation-timing-function: linear;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+.cloud2{
+  background: url('/360_F_89420298_g2G1BanBZfVnSByIPvDqpYHOmqtbxHCU-removebg-preview.png') ;
+  background-size: auto 100%;
+  width: 220px;
+  aspect-ratio: 5/4;
+  animation-name: clouds2;
+  animation-timing-function: linear;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+@keyframes clouds {
+  0%{
+    right: -10%;
+    opacity: 0;
+  }
+  20%{
+    right: 10%;
+    opacity: 1;
+  }
+  40%{
+    right: 30%;
+    opacity: 1;
+  }
+  60%{    
+    right: 50%;
+    opacity: 1;
+  }
+  80%{
+
+    right: 70%;
+    opacity: 1;
+  }
+  100%{
+    right: 90%;
+    opacity: 0;
+  }
+}
+@keyframes clouds2 {
+  0%{
+    right: 0%;
+    opacity: 0;
+  }
+  20%{
+    right: 20%;
+    opacity: 1;
+  }
+  
+  40%{
+    right: 40%;
+    opacity: 1;
+  }
+  60%{    
+    right: 60%;
+    opacity: 1;
+  }
+  80%{
+    right: 80%;
+    opacity: 1;
+  }
+  100%{
+    right: 100%;
+    opacity: 0;
+  }
+}
+
+.product{
+  --left: 0;
+}
+
+.item{
+  background: 
+      url('/poster1.png') var(--left) 0,
+      url('/istockphoto-495144450-612x612-removebg-preview.png');
+  background-size: auto 100%;
+  width: 400px;
+  aspect-ratio: 3/4;
+  background-blend-mode: multiply;
+  mask-image: url('/istockphoto-495144450-612x612-removebg-preview.png');
+  mask-size: auto 100%;
+  transition: all ease 1s;
+}
+.item:hover{
+  --left:-500px;
+}
