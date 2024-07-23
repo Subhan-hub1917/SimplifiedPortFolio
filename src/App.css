@@ -144,3 +144,6 @@
 .item:hover{
   --left:-500px;
 }
+.project{
+  transform: perspective(5em) rotateX(20deg);
+}

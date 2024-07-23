@@ -34,7 +34,7 @@ const Projects = () => {
           card.map((item)=>(
             <motion.div 
               initial={{rotateX:40,rotateY:0}} animate={{rotateX:40,rotateY:40}} whileInView={{rotateX:0,rotateY:0}} className='relative overflow-hidden bg-black rounded-lg border border-black unselected  parent-card '>
-                <motion.img src={item.link}  height={800} width={400} style={{objectFit:'fill'}} className='hover:opacity-[0.2]'/>
+                <motion.img src={item.link}  height={800} width={400} style={{objectFit:'fill'}} className='hover:opacity-[0.2] '/>
                 <div className='absolute text-white p-2  child-card'>
                     <h2 className='font-bold text-lg'>{item.title}</h2>
                     <p className='font-thin'>{item.content  }</p>

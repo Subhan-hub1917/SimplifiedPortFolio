@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+}
 :root {
   color-scheme: light;
 }
