@@ -16,7 +16,7 @@ const Skills = () => {
               <h2>Mongodb</h2>
               <div></div>
         </motion.div>
-        <motion.div animate={{rotateX:40}} className=' absolute rounded-lg lg:text md:text-2xl stroke-2 top--50  px-5 py-5 lg:px-10 lg:py-10 bg-black  text-white'>
+        <motion.div animate={{rotateX:40}} className='hidden lg:block absolute rounded-lg lg:text md:text-2xl stroke-2 top--50  px-5 py-5 lg:px-10 lg:py-10 bg-black  text-white'>
             <div className='project absolute bg-black h-5 bottom-0 left-0 blur-md w-full'></div>  
               <h2>MERN</h2>
               <h2>Stack</h2>
