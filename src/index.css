@@ -9,7 +9,7 @@
   font-style: normal;
 }
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 }
 .parent-card{
   --opac: 1;
